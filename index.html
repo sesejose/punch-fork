@@ -10,197 +10,315 @@
   <body>
     <header>
       <nav>
-        <div id="logo"><img src="images/logo.jpg" alt="logo"></div>
+        <div id="logo"><img src="images/logo.jpg" alt="logo" /></div>
 
         <div class="mag-glass-icon">
           <a onclick="openSearch()"
             ><i class="fa-solid fa-magnifying-glass"
-              ><img src="images/magnifying-glass-solid.svg" /></i
+              ><img src="images/magnifying-glass-solid.svg" alt="" /></i
           ></a>
         </div>
 
         <div class="hamburger">
-          <a onclick="openMainMenu()"><i class="fa-solid fa-bars"><img src="images/bars-solid.svg" /></i></a>
+          <a onclick="openMainMenu()"
+            ><i class="fa-solid fa-bars"
+              ><img src="images/bars-solid.svg" alt="" /></i
+          ></a>
         </div>
 
         <div id="search">
           <form class="search-field m">
             <div class="mag-glass">
-                <i class="fa-solid fa-magnifying-glass">
-                <img src="images/magnifying-glass-solid.svg"/>
-                </i>
+              <i class="fa-solid fa-magnifying-glass">
+                <img src="images/magnifying-glass-solid.svg" alt="" />
+              </i>
             </div>
-            <input type="text" value="Search whatever you want">
-              
-              </input>
-              <!-- <button type="button" class="btn-search">SEARCH</button> -->
-              </div>
-            </imput>
+            <input type="text" value="Search whatever you want" />
           </form>
         </div>
 
-        <div id="mainmenu"> <!--Mbile-->
-            <ul>
-                <a href="#"><li class="btn-log-in">Log in</li></a>
-                <a href="#"><li class="sign-up">Sign up</li></a>
-                <a href="#"><li class="arrow">More</li></a>
-            </ul>
+        <div id="mainmenu">
+          <!--Mobile-->
+          <ul>
+            <li class="btn-log-in"><a href="#">Log in</a></li>
+            <li class="sign-up"><a href="#">Sign up</a></li>
+            <li class="arrow"><a href="#">More</a></li>
+          </ul>
         </div>
 
-        <div id="menu"><!--Desktop-->
-            <ul>
-                <li><a class="log-in">Log in</a></li>
-                <li><a class="sign-up">sign up</a></li>
-                <li><a class="more"><img src="images/angle-down-solid.svg" alt=""></a></li>
-            </ul>    
+        <div id="menu">
+          <!--Desktop-->
+          <ul>
+            <li><a class="log-in">Log in</a></li>
+            <li><a class="sign-up">sign up</a></li>
+            <li>
+              <a class="more"
+                ><img src="images/angle-down-solid.svg" alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
-
       </nav>
     </header>
 
     <main>
-      <div>
-        <div>
+      <section class="container">
+        <div id="product">
           <img src="images/potato-skins.jpg" alt="product" />
+          <h1>Potato Skins</h1>
+          <p>Gluten free · 1 hr 55 mins</p>
         </div>
-        <h1>Product name</h1>
-        <p>1H</p>
-      </div>
-      <div>
-        <div class="ratting"></div>
-        <div class="member"></div>
-        <div class="ingredients"></div>
-      </div>
 
-      <hr />
+        <div id="info">
+          <div class="ratting"><span>82</span> / 100<br />Rating</div>
+          <div class="user">
+            <img src="images/user.jpg" alt="User" /><br />Cooking Classy
+          </div>
+          <div class="ingredients"><span>10</span><br />Ingredients</div>
+        </div>
 
-      <section id="ingredients">
-        <h2>Ingredients</h2>
-        <div>Serves 5</div>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <button type="button" class="button-grey">Directions</button>
-        <button type="button" class="button-grey">Red</button>
+        <div id="ingredients">
+          <h2>Ingredients</h2>
+          <p>Serves 6</p>
+          <ul>
+            <li>
+              <strong>6</strong> medium (7 oz each) russet potatoes (2 1/2 lbs
+              total)
+            </li>
+            <li><strong>7 slices</strong> bacon (chopped (7 oz))</li>
+            <li>
+              <strong>1 1/4 cups</strong>(5 oz) shredded medium cheddar cheese
+            </li>
+            <li><strong>1 tbsp</strong> olive oil (or vegetable oil)</li>
+            <li><strong>3</strong> green onions (chopped)</li>
+            <li><strong>3 tbsp </strong>minced parsley</li>
+            <li><strong>1 garlic</strong> clove (minced (1 tsp))</li>
+            <li><strong>3/4 cup</strong> sour cream</li>
+            <li><strong>1/4 tsp</strong> red pepper flakes (optional)</li>
+            <li>Salt and freshly ground black pepper</li>
+          </ul>
+
+          <div id="buttons">
+            <ul>
+              <li><a href="#" class="directions">Directions</a></li>
+              <li><a href="#" class="save">Save</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="nutrition-facts">
+          <h2>Nutrition Facts</h2>
+          <div class="nutrition">
+            <div class="padding">
+              <p>Calories</p>
+              <br />
+              <strong>354</strong>
+            </div>
+            <div class="padding">
+              <p>Protein</p>
+              <br />
+              <strong>8g</strong>
+            </div>
+            <div class="padding">
+              <p>Fat</p>
+              <br />
+              <strong>14g</strong>
+            </div>
+            <div class="padding">
+              <p>Carbohydrate</p>
+              <br />
+              <strong>24g</strong>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <hr />
-
-      <section id="nutrition-facts">
-        <div>
-          <div>Calories<br /><strong>354</strong></div>
-          <div>Protein<br /><strong>8g</strong></div>
-          <div>Fat<br /><strong>14g</strong></div>
-          <div>Carbohydrates<br /><strong>44g</strong>r</div>
-        </div>
-      </section>
-
-      <hr />
+      <!--************* RECEPIES ************-->
 
       <section id="recepies">
-        <h2>From Cooking Classy</h2>
-        <a href="http://..." target="_blank">SE ALL ></a>
+        <div class="title-recepies">
+          <div><h2>From Cooking Classy</h2></div>
+          <div class="padding"><a href="#" target="_blank">SE ALL ></a></div>
+        </div>
 
         <div id="main-grid">
-          <article>
-            <img src="images/..." alt="Alt image" />
-            <div>Potato skins</div>
-            <div>
-              <div>CC</div>
-              <a><p>Cooking Classy</p></a>
-              <div>82</div>
+          <!-- ******* Product ********* -->
+          <div class="thumb one">
+            <div class="img-thumb">
+              <a href="#">
+                <div class="overlay">
+                  <div class="text">Potato skins</div>
+                </div>
+                <img src="images/recipies.jpg" alt="Alt image" />
+              </a>
             </div>
-            <div>
-              <div>Watch icon</div>
-              <p>1 hour ago</p>
-              <p>Ratting</p>
+
+            <div class="info-thumb">
+              <div class="info-left-thumb">
+                <div>CC<a> Cooking Classy</a></div>
+                <div><img src="images/clock-solid.svg" alt="" /> 3yr ago</div>
+              </div>
+              <div class="info-right-thumb">
+                <div>82</div>
+                <div>Ratting</div>
+              </div>
             </div>
-          </article>
+          </div>
+          <!--end Thumb-->
+          <!-- ******* Product ********* -->
+          <div class="thumb two">
+            <div class="img-thumb">
+              <a href="#">
+                <div class="overlay">
+                  <div class="text">Potato skins</div>
+                </div>
+                <img src="images/recipies.jpg" alt="Alt image" />
+              </a>
+            </div>
+
+            <div class="info-thumb">
+              <div class="info-left-thumb">
+                <div>CC<a> Cooking Classy</a></div>
+                <div><img src="images/clock-solid.svg" alt="" /> 3yr ago</div>
+              </div>
+              <div class="info-right-thumb">
+                <div>82</div>
+                <div>Ratting</div>
+              </div>
+            </div>
+          </div>
+          <!--end Thumb-->
+          <!-- ******* Product ********* -->
+          <div class="thumb three">
+            <div class="img-thumb">
+              <a href="#">
+                <div class="overlay">
+                  <div class="text">Potato skins</div>
+                </div>
+                <img src="images/recipies.jpg" alt="Alt image" />
+              </a>
+            </div>
+
+            <div class="info-thumb">
+              <div class="info-left-thumb">
+                <div>CC<a> Cooking Classy</a></div>
+                <div><img src="images/clock-solid.svg" alt="" /> 3yr ago</div>
+              </div>
+              <div class="info-right-thumb">
+                <div>82</div>
+                <div>Ratting</div>
+              </div>
+            </div>
+          </div>
+          <!--end Thumb-->
+          <!-- ******* Product ********* -->
+          <div class="thumb four">
+            <div class="img-thumb">
+              <a href="#">
+                <div class="overlay">
+                  <div class="text">Potato skins</div>
+                </div>
+                <img src="images/recipies.jpg" alt="Alt image" />
+              </a>
+            </div>
+
+            <div class="info-thumb">
+              <div class="info-left-thumb">
+                <div>CC<a> Cooking Classy</a></div>
+                <div><img src="images/clock-solid.svg" alt="" /> 3yr ago</div>
+              </div>
+              <div class="info-right-thumb">
+                <div>82</div>
+                <div>Ratting</div>
+              </div>
+            </div>
+          </div>
+          <!--end Thumb-->
+          <!-- ******* Product ********* -->
+          <div class="thumb five">
+            <div class="img-thumb">
+              <a href="#">
+                <div class="overlay">
+                  <div class="text">Potato skins</div>
+                </div>
+                <img src="images/recipies.jpg" alt="Alt image" />
+              </a>
+            </div>
+
+            <div class="info-thumb">
+              <div class="info-left-thumb">
+                <div>CC<a> Cooking Classy</a></div>
+                <div><img src="images/clock-solid.svg" alt="" /> 3yr ago</div>
+              </div>
+              <div class="info-right-thumb">
+                <div>82</div>
+                <div>Ratting</div>
+              </div>
+            </div>
+          </div>
+          <!--end Thumb-->
         </div>
+        <!--End main grid-->
       </section>
 
-      <section id="more-recipies">
+      <!--************* MORE RECEPIES ************-->
+
+      <!-- <section id="more-recipies">
         <h2>More recipies like this</h2>
-
-        <div id="main-grid">
-          <article>
-            <img src="images/..." alt="Alt image" />
-            <div>Potato skins</div>
-            <div>
-              <div>CC</div>
-              <a><p>Cooking Classy</p></a>
-              <div>82</div>
-            </div>
-            <div>
-              <div>Watch icon</div>
-              <p>1 hour ago</p>
-              <p>Ratting</p>
-            </div>
-          </article>
-        </div>
-      </section>
+      </section> -->
     </main>
 
     <footer>
-      <div class="container">
+      <div class="footer-container">
         <div class="logo-footer">
-          <a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
+          <a href="#"><img src="images/logo.jpg" alt="Logo" /></a>
         </div>
 
-        <div>
-          <ol>
-            <li>Discover</li>
-            <li><a href="http://www.google.com">Recipes</a></li>
-            <li><a href="http://www.google.com">Publishers</a></li>
-            <li><a href="http://www.google.com">Cookbooks</a></li>
-          </ol>
+        <div class="w100">
+          <ul>
+            <li><strong>DISCOVER</strong></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Publishers</a></li>
+            <li><a href="#">Cookbooks</a></li>
+          </ul>
         </div>
 
-        <div>
-          <ol>
-            <li>About</li>
-            <li><a href="http://www.google.com">About</a></li>
-            <li><a href="http://www.google.com">How it works</a></li>
-            <li><a href="http://www.google.com">FAQ</a></li>
-          </ol>
+        <div class="w100">
+          <ul>
+            <li><strong>ABOUT</strong></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
         </div>
 
-        <div>
-          <ol>
-            <li>Resources</li>
-            <li><a href="http://www.google.com">Sitemap</a></li>
-            <li><a href="http://www.google.com">Terms of use</a></li>
-            <li><a href="http://www.google.com">Privacy Policy</a></li>
-          </ol>
+        <div class="w100">
+          <ul>
+            <li><strong>RESOURCES</strong></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
         </div>
 
-        <div>
-          <ol>
-            <li>Connect</li>
-            <li>
-              <a href="http://www.google.com">Facebook</a>
-            </li>
-            <li>
-              <a href="http://www.google.com">Twitter</a>
-            </li>
-            <li>
-              <a href="http://www.google.com">Contact</a>
-            </li>
-          </ol>
+        <div class="w100">
+          <ul>
+            <li><strong>CONNECT</strong></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
+
+        <!-- <div class="w100"></div> -->
       </div>
-
-      <hr />
-
-      <div class="text-footer">
-        <p>
-          © Punchfork LLC. All third party content is © of their respective
-          owners.
-        </p>
-      </div>
+      <!--footer container ends-->
+      <!-- 
+      <div class="footer-container">
+        <p>KEA, Multimedia Design, José Francisco Sesé</p>
+      </div> -->
     </footer>
+
+    <script src="javascript.js"></script>
   </body>
-  <script src="javascript.js"></script>
 </html>
