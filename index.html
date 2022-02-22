@@ -10,29 +10,58 @@
   <body>
     <header>
       <nav>
+        <div id="logo"><img src="images/logo.jpg" alt="logo"></div>
+
+        <div class="mag-glass-icon">
+          <a onclick="openSearch()"
+            ><i class="fa-solid fa-magnifying-glass"
+              ><img src="images/magnifying-glass-solid.svg" /></i
+          ></a>
+        </div>
+
+        <div class="hamburger">
+          <a onclick="openMainMenu()"><i class="fa-solid fa-bars"><img src="images/bars-solid.svg" /></i></a>
+        </div>
+
         <div id="search">
-          <form class="search-field">
-            <imput>
-              <div class="mag-glass"><i></i></div>
-              <p>Search by recipies or ingredients</p>
+          <form class="search-field m">
+            <div class="mag-glass">
+                <i class="fa-solid fa-magnifying-glass">
+                <img src="images/magnifying-glass-solid.svg"/>
+                </i>
+            </div>
+            <input type="text" value="Search whatever you want">
+              
+              </input>
+              <!-- <button type="button" class="btn-search">SEARCH</button> -->
+              </div>
             </imput>
           </form>
         </div>
 
-        <div id="logo">PUNCHFORK</div>
+        <div id="mainmenu"> <!--Mbile-->
+            <ul>
+                <a href="#"><li class="btn-log-in">Log in</li></a>
+                <a href="#"><li class="sign-up">Sign up</li></a>
+                <a href="#"><li class="arrow">More</li></a>
+            </ul>
+        </div>
 
-        <ul>
-          <li class="log-in"></li>
-          <li class="sign-up"></li>
-          <li class="arrow"></li>
-        </ul>
+        <div id="menu"><!--Desktop-->
+            <ul>
+                <li><a class="log-in">Log in</a></li>
+                <li><a class="sign-up">sign up</a></li>
+                <li><a class="more"><img src="images/angle-down-solid.svg" alt=""></a></li>
+            </ul>    
+        </div>
+
       </nav>
     </header>
 
     <main>
       <div>
         <div>
-          <img src="images/..." alt="product" />
+          <img src="images/potato-skins.jpg" alt="product" />
         </div>
         <h1>Product name</h1>
         <p>1H</p>
